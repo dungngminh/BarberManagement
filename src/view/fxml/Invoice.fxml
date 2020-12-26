@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="726.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.InvoiceController">
+   <children>
+      <AnchorPane prefHeight="167.0" prefWidth="946.0" style="-fx-background-color: #d9d9d9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="setImg" fitHeight="150.0" fitWidth="200.0" layoutX="41.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="41.0" AnchorPane.topAnchor="9.0">
+               <image>
+                  <Image url="@../../../../../Downloads/This.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="666.0" layoutY="9.0" prefHeight="53.0" prefWidth="179.0" text="INVOICE" AnchorPane.rightAnchor="92.0">
+               <font>
+                  <Font name="Javanese Text" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="680.0" layoutY="70.0" prefHeight="29.0" prefWidth="76.0" text="#Booking ID:" textFill="#6f5d5d" AnchorPane.rightAnchor="181.0" />
+            <Label layoutX="680.0" layoutY="99.0" text="#Invoice Date:" textFill="#6f5d5d" AnchorPane.rightAnchor="181.0" />
+            <Label fx:id="setInvoiceID" layoutX="765.0" layoutY="76.0" prefHeight="17.0" prefWidth="160.0" text="Label" AnchorPane.rightAnchor="12.0" />
+            <Label fx:id="setInvoiceDate" layoutX="765.0" layoutY="99.0" prefHeight="17.0" prefWidth="160.0" text="Label" AnchorPane.rightAnchor="12.0" />
+         </children>
+      </AnchorPane>
+      <VBox layoutX="46.0" layoutY="177.0" prefHeight="144.0" prefWidth="323.0" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="177.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="53.0" text="Bill To:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="135.0" text="Company:     DUT Barber">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="27.0" prefWidth="336.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="70.0" text="Customer:">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="customerName" text="Label" />
+               </children>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="323.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="70.0" text="Customer ID:">
+                     <HBox.margin>
+                        <Insets left="20.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="customerPhone" text="Label" />
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="323.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="55.0" text="Employee:">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="comboBox" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #FFFFFF;">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="409.0" layoutY="578.0" prefHeight="135.0" prefWidth="172.0" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="116.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="201.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Sub Total: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="subPrice" prefHeight="17.0" prefWidth="90.0" text="Label" />
+               </children>
+            </HBox>
+            <Line endX="100.0" startX="-100.0" />
+            <HBox prefHeight="39.0" prefWidth="201.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Discount :">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="discount" onKeyReleased="#deleteKey" onKeyTyped="#calGrandTotal" prefHeight="0.0" prefWidth="29.0" style="-fx-background-color: #FFFFEF;">
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Label text="\%">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="100.0" startX="-100.0" />
+            <HBox prefHeight="45.0" prefWidth="201.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Grand Total:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="grandTotal" text="Label">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="billTable" layoutX="135.0" layoutY="321.0" prefHeight="250.0" prefWidth="481.0" stylesheets="@css/profit.css" AnchorPane.bottomAnchor="181.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="321.0">
+        <columns>
+          <TableColumn fx:id="pos" prefWidth="75.0" text="Pos." />
+          <TableColumn fx:id="serviceCol" prefWidth="138.0" text="Product Name" />
+            <TableColumn fx:id="unitPriceCol" prefWidth="219.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="applyButton" layoutX="575.0" layoutY="707.0" mnemonicParsing="false" onAction="#addRecord" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #FFFFBE;" text="Apply &amp; Print" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="109.0" />
+   </children>
+</AnchorPane>

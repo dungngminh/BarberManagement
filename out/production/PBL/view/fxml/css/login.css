@@ -1,0 +1,37 @@
+.mainPane {
+    -fx-background-image: url("https://wallup.net/wp-content/uploads/2017/11/23/502910-Firewatch-night-forest.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: fixed;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-border-radius: 10px;
+}
+
+.loginLabel {
+    -fx-background-color: white;
+    -fx-opacity: 1.0;
+}
+
+.hboxLabel {
+    -fx-background-color: #FFFFFF;
+    -fx-opacity: 1.0;
+}
+
+.vBoxPane {
+    -fx-background-color: #fff;
+    -fx-opacity: 0.9;
+    -fx-border-radius: 10px;
+}
+
+.loginBtn {
+    -fx-background-color: #F0F0F0;
+}
+
+.loginBtn:hover {
+    -fx-background-color: #c2cfc5;
+}
+
+
+.userName:focused {
+    -fx-background-color: #8f8989;
+}

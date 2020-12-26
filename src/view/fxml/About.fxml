@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1308.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.AboutController">
+    <children>
+        <VBox prefHeight="592.0" prefWidth="265.0" style="-fx-background-color: #202040;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="116.0" prefWidth="265.0" style="-fx-background-color: #202040;">
+                    <children>
+                        <Label layoutX="78.0" layoutY="42.0" prefHeight="27.0" prefWidth="143.0" text="DUT Soft" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <FontAwesomeIcon fill="WHITE" glyphName="MERCURY" layoutX="42.0" layoutY="68.0" selectionEnd="0" size="26" />
+                    </children>
+                </Pane>
+                <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="    Home" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnAppointment" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="    Appointment" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnCustomer" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="    Customer" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USER" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnEmployee" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="   Employee" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="GROUP" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnProfit" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="   Profit" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="MONEY" size="20" />
+                    </graphic>
+               <VBox.margin>
+                  <Insets bottom="200.0" />
+               </VBox.margin>
+                </Button>
+                <Button fx:id="btnAbout" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="    About Us" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HISTORY" size="20" />
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+      <AnchorPane layoutX="265.0" layoutY="-6.0" prefHeight="143.0" prefWidth="1045.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="580.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="40.0" layoutY="35.0" prefHeight="35.0" prefWidth="158.0" text="About">
+               <font>
+                  <Font name="Microsoft YaHei Light" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="265.0" layoutY="118.0" prefHeight="516.0" prefWidth="1045.0" AnchorPane.bottomAnchor="89.0" AnchorPane.topAnchor="118.0">
+         <children>
+            <VBox layoutX="6.0" layoutY="83.0" prefHeight="570.0" prefWidth="1045.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="74.0" prefWidth="1045.0">
+                     <children>
+                        <Label prefHeight="64.0" prefWidth="1005.0" text="Barber Management">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Microsoft YaHei Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="223.0" prefWidth="1045.0">
+                     <children>
+                        <VBox prefHeight="150.0" prefWidth="242.0">
+                           <children>
+                              <ImageView fx:id="setIconImg" fitHeight="150.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="40.0" right="40.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../../../../../Downloads/icons8-user-male-512.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="100.0" prefWidth="792.0">
+                           <children>
+                              <VBox prefHeight="47.0" prefWidth="792.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="792.0" text="This app is designed to manage basic things in Barber Shop.">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="106.0" prefWidth="766.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="766.0" text="Credit: ">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="26.0" prefWidth="181.0" text="1. Nguyen Minh Dung ">
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="27.0" prefWidth="189.0" text="2. Le Quoc Thinh          ">
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="93.0" prefWidth="1045.0">
+                     <children>
+                        <Label prefHeight="41.0" prefWidth="1050.0" text="If you find any bugs, please open a new issue in the Github repository.">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="155.0" prefWidth="1045.0">
+                     <children>
+                        <VBox prefHeight="138.0" prefWidth="1045.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="152.0" text="Version: 0.0.1">
+                                 <VBox.margin>
+                                    <Insets left="40.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="40.0" prefWidth="293.0" text="Release Day: 26/12/2020">
+                                 <VBox.margin>
+                                    <Insets left="40.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="262.0" layoutY="634.0" prefHeight="100.0" prefWidth="1045.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox prefHeight="83.0" prefWidth="1045.0">
+               <children>
+                  <ImageView fx:id="setGitImage" fitHeight="49.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../../../../Downloads/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="50.0" prefWidth="191.0" text="GitHub respository" textFill="#2225cd">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

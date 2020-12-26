@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.calendarfx.view.CalendarView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="841.0" prefWidth="1405.0" stylesheets="@css/Appointment.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.AppointmentController">
+    <children>
+        <VBox prefHeight="592.0" prefWidth="265.0" style="-fx-background-color: #202040;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="116.0" prefWidth="265.0" style="-fx-background-color: #202040;">
+                    <children>
+                        <Label layoutX="78.0" layoutY="42.0" prefHeight="27.0" prefWidth="143.0" text="DUT Soft" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <FontAwesomeIcon fill="WHITE" glyphName="MERCURY" layoutX="42.0" layoutY="68.0" selectionEnd="0" size="26" />
+                    </children>
+                </Pane>
+                <Button fx:id="btnHA" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#clicksfromAppointment" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="    Home" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnAA" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/Appointment.css" text="    Appointment" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnCA" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#clicksfromAppointment" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="    Customer" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USER" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnEA" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#clicksfromAppointment" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="   Employee" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="GROUP" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnPA" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#clicksfromAppointment" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="   Profit" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="MONEY" size="20" />
+                    </graphic>
+                </Button>
+                <Button fx:id="btnAbA" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#clicksfromAppointment" prefHeight="67.0" prefWidth="265.0" stylesheets="@css/fullpackstyling.css" text="    About Us" textFill="WHITE">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HISTORY" size="20" />
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+        <Pane fx:id="appointmentPane" layoutX="264.0" layoutY="53.0" prefHeight="116.0" prefWidth="1042.0" style="-fx-background-color: #66bb6a;" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="53.0">
+            <children>
+                <Label layoutX="98.0" layoutY="41.0" prefHeight="35.0" prefWidth="155.0" text="Appointment" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="98.0" layoutY="21.0" prefHeight="27.0" prefWidth="143.0" text="/home/appointment" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+      <CalendarView fx:id="calendarViewID" layoutX="265.0" layoutY="173.0" prefHeight="668.0" prefWidth="1140.0" showAddCalendarButton="false" showDeveloperConsole="true" showSearchResultsTray="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="265.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="173.0" />
+    </children>
+</AnchorPane>

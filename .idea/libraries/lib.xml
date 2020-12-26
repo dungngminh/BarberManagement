@@ -1,0 +1,45 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://D:/Garena/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+      <root url="jar://$USER_HOME$/Downloads/jar/lombok.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar/view-11.8.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar/jfoenix-9.0.10.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/jar" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/activation-1.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/commons-codec-1.11.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/commons-collections4-4.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/commons-lang3-3.8.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/ical4j-3.0.10.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/controlsfx-11.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/ikonli-core-11.3.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/ikonli-fontawesome-pack-11.3.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/ikonli-javafx-11.3.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/javafx-base-13.0.1-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/javafx-controls-13.0.1-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/javafx-graphics-13.0.1-linux.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/javax.mail-1.6.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/view-11.8.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jfxtras-labs-samples-8.0-r6-SNAPSHOT-all.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-agenda-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-all-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-common-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-controls-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-font-roboto-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-fxml-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-gauge-linear-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-icalendaragenda-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-menu-10.0-r1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (4)/jfxtras-icalendarfx-10.0-r1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/Garena/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+      <root url="jar://$USER_HOME$/Downloads/jar_files (2)/ical4j-3.0.10.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads/jar" recursive="false" />
+    <jarDirectory url="file://D:/Garena/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" recursive="false" />
+    <jarDirectory url="file://D:/Garena/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

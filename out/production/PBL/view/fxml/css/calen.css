@@ -1,0 +1,21 @@
+.button {
+    -fx-background-color: #FFFFEE;
+}
+
+.button-bar {
+    -fx-background-color: #FFFFEE;
+}
+
+.button-icon {
+    -fx-background-color: #FFFFEE;
+}
+
+.toggle-button {
+    -fx-background-color: #FFFFEF;
+    -fx-border-width: 0 1 0 1;
+    -fx-border-color: #ebf0f9;
+}
+
+.search-result-view {
+    -fx-background-color: #FFFFEF;
+}

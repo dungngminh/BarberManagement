@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.calendarfx.view.TimeField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.AddController">
+   <children>
+      <VBox layoutX="83.0" layoutY="58.0" prefHeight="376.0" prefWidth="355.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="83.0" prefWidth="355.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="109.0" text="Customer Name:" />
+                  <Label fx:id="setCustomerName" text="Label">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="355.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="92.0" text="Customer ID:">
+                     <HBox.margin>
+                        <Insets right="17.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="setCusID" text="Label">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="355.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="113.0" text="Select Service:" />
+                  <ComboBox fx:id="selectService" prefHeight="24.0" prefWidth="250.0" promptText="Choose Service" style="-fx-background-color: #FFFFFF;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="85.0" prefWidth="355.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="173.0" text="Select Date:" />
+                  <DatePicker fx:id="selectDate" prefHeight="25.0" prefWidth="312.0" promptText="Date" style="-fx-background-color: #FFFFFF;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="355.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="140.0" text="Select Time:" />
+                  <TimeField fx:id="selectTime" prefHeight="26.0" prefWidth="277.0" style="-fx-background-color: #FFFFFF;" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnApply" layoutX="364.0" layoutY="477.0" mnemonicParsing="false" onAction="#saveAppointment" style="-fx-background-color: #FFFFF1;" text="Apply" />
+      <Button fx:id="btnCancel" layoutX="430.0" layoutY="477.0" mnemonicParsing="false" onAction="#cancelAppointment" style="-fx-background-color: #FFFFF1;" text="Cancel" />
+   </children>
+</AnchorPane>
